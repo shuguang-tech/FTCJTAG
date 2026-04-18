@@ -426,7 +426,7 @@ FTC_STATUS FT2232h::FTC_OpenSpecifiedHiSpeedDevice(LPSTR lpDeviceName, DWORD dwL
           {
             if ((Status = FT_OpenEx((PVOID)dwLocationID, FT_OPEN_BY_LOCATION, &ftHandle)) == FTC_SUCCESS)
             {
-              *pftHandle = (DWORD)ftHandle;
+              *pftHandle = (FTC_HANDLE)ftHandle;
 
               FTC_InsertDeviceHandle(lpDeviceName, dwLocationID, lpChannel, dwDeviceType, *pftHandle);
             }

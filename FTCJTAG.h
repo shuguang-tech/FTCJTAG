@@ -44,7 +44,7 @@ Revision History:
 #define FTCJTAG_API __declspec(dllimport)
 #endif
 
-typedef DWORD FTC_HANDLE;
+typedef ULONGLONG FTC_HANDLE;
 typedef ULONG FTC_STATUS;
 
 // Hi-speed device types

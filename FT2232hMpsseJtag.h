@@ -190,7 +190,7 @@ typedef PReadCommandSequenceData ReadCommandsSequenceData[1];
 typedef ReadCommandsSequenceData *PReadCommandsSequenceData;
 
 typedef struct Ft_Device_Cmd_Sequence_Data{
-  DWORD hDevice;                                    // handle to the opened and initialized FT2232C dual type device
+  FTC_HANDLE hDevice;                                    // handle to the opened and initialized FT2232C dual type device
   DWORD dwNumBytesToSend;
   POutputByteBuffer pCommandsSequenceDataOutPutBuffer;
   DWORD dwSizeReadCommandsSequenceDataBuffer;

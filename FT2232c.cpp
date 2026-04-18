@@ -383,7 +383,7 @@ FTC_STATUS FT2232c::FTC_OpenSpecifiedDevice(LPSTR lpDeviceName, DWORD dwLocation
 
           if (Status == FTC_SUCCESS)
           {
-            *pftHandle = (DWORD)ftHandle;
+            *pftHandle = (FTC_HANDLE)ftHandle;
 
             FTC_InsertDeviceHandle(lpDeviceName, dwLocationID, *pftHandle);
           }
