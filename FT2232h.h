@@ -61,7 +61,7 @@ typedef struct Ft_Hi_Speed_Device_Data{
   char  szChannel[MAX_NUM_CHANNEL_CHARS];           // the channel ie A or B of a FT2232H or FT4232H hi-speed device
   BOOL  bDivideByFiveClockingState;                 // contains the state of the clock divide by five ie turned on(TRUE), turned off(FALSE)
   DWORD dwDeviceType;                               // hi-speed device type, FT2232H or FT4232H
-  ULONGLONG hDevice;                                    // handle to the opened and initialized FT2232H or FT4232H hi-speed device
+  FTC_HANDLE hDevice;                                    // handle to the opened and initialized FT2232H or FT4232H hi-speed device
 }FTC_HI_SPEED_DEVICE_DATA, *PFTC_HI_SPEED_DEVICE_DATA;
 
 typedef DWORD HiSpeedDeviceIndexes[MAX_NUM_DEVICES];

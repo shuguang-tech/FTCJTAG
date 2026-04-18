@@ -58,7 +58,7 @@ typedef struct Ft_Device_Data{
 	DWORD dwProcessId;					                      // process identifier of the calling process ie application
   char  szDeviceName[MAX_NUM_DEVICE_NAME_CHARS];    // pointer to the name of a FT2232C dual type device
   DWORD dwLocationID;                               // the location identifier of a FT2232C dual type device
-  ULONGLONG hDevice;                                    // handle to the opened and initialized FT2232C dual type device
+  FTC_HANDLE hDevice;                                    // handle to the opened and initialized FT2232C dual type device
 }FTC_DEVICE_DATA, *PFTC_DEVICE_DATA;
 
 typedef DWORD FT2232CDeviceIndexes[MAX_NUM_DEVICES];
